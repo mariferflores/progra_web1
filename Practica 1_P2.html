@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Práctica 1</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1 align="center">Venta en línea</h1>
+	<form method="post" enctype="text/plain">
+		<fieldset style="width: 900px">
+			<legend>Información general</legend>
+			<table style="width: 700px;" align="center">
+				<thead>
+					<tr>
+						<td>
+							<label for="Nombre">Nombre: </label><br>
+							<input type="text" name="Nombre" id="Nombre" placeholder="Nombre" required>
+						</td>
+						<td>
+							<label for="ApellidoP">Apellido paterno: </label><br>
+							<input type="text" name="ApellidoP" id="ApellidoP" placeholder="Apellido paterno">
+						</td>
+						<td>
+							<label for="ApellidoM">Apellido materno: </label><br>
+							<input type="text" name="ApellidoM" id="ApellidoM" placeholder="Apellido materno">
+						</td>
+					</tr>
+				</thead>
+				<tbody style="width: 500px">
+					<tr>
+						<td>
+							<label for="usuario">Nombre de usuario: </label><br>
+							<input type="text" name="usuario" id="usuario" placeholder="Usuario" required>
+						</td>
+						<td>
+							<label for="pass">Contraseña: </label><br>
+							<input type="password" name="pass" id="pass" placeholder="Password" required>
+						</td>
+						<td>
+							<label for="fechan">Fecha de nacimiento: </label><br>
+							<input type="date" name="fechan" id="fechan">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</fieldset>
+		<fieldset style="width: 900px">
+			<legend>Datos de facturación</legend>
+			<table style="width: 600px" align="center">
+				<thead>
+					<tr>
+						<td>
+							<legend>País</legend>
+							<select size="3">
+									<option>México</option>
+									<option>Canadá</option>
+									<option>E.U.A.</option>
+									<option>Brasil</option>
+									<option>Argentina</option>
+									<option>Chile</option>
+							</select>
+						</td>
+						<td>
+							<legend>Ciudad</legend>
+							<select size="3">
+								<option>San Luis Potosí</option>
+								<option>Matehuala</option>
+								<option>Cd. Valles</option>
+								<option>Puebla</option>
+								<option>Querétaro</option>
+								<option>Monterrey</option>
+								<option>Aguascalientes</option>
+							</select>
+						</td>
+						<td>
+							<label for="calle">Calle</label>
+							<input type="text" name="calle" id="calle" placeholder="Calle">
+						</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<label for="numext">Número de casa</label>
+							<input type="number" name="numext" id="numext" placeholder="Número exterior">
+						</td>
+						<td>
+							<label for="colonia">Colonia</label>
+							<input type="text" name="colonia" id="colonia" placeholder="Colonia">
+						</td>
+						<td>
+							<label for="correo">E-mail</label>
+							<input type="email" name="correo" id="correo" placeholder="E-mail" required>
+						</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td>
+							<label for="rfc">R.F.C.</label>
+							<input type="text" name="rfc" id="rfc" placeholder="R.F.C." required>
+						</td>
+						<td>
+							<label for="cp">C.P.</label>
+							<input type="number" name="cp" id="cp" placeholder="Código postal">
+						</td>
+						<td>
+							<input type="submit" name="enviar" id="enviar" value="Enviar">
+							<input type="reset" name="restablecer" id="restablecer" value="Restablecer">
+						</td>
+					</tr>
+				</tfoot>
+			</table>
+		</fieldset>
+	</form>
+</body>
+</html>
