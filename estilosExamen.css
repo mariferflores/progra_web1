@@ -1,0 +1,110 @@
+#logo{
+	font-size: 30px;
+}
+.menu {
+    display: inline-block;
+    padding: 20px 70px;
+    margin: 5px;
+    background-color: #6B538C;
+    align-content: center;
+    color: white;
+    font-style: italic; 
+
+}
+
+.menu:hover {
+    background-color: #CFABFF;
+}
+#articulo{
+	text-align: left;
+}
+#articulo p{
+	text-align: justify;
+	font-family: arial;
+	font-size: 14px;
+	margin-left: 200px;
+	width: 90%;
+	padding: 5px 40px;
+}
+#login{
+	display: inline-block;
+	padding: 20px 80px;
+	margin: 5px;
+	background-color: #6B538C;
+	text-decoration: none;
+	text-align: center;
+	font-size: 18px;
+	color: white;
+}
+#id{
+	align-content: right;
+}
+#Ingresa{
+	display: inline-block;
+	padding: 20px 68px;
+	margin: 5px;
+	background-color: #6B538C;
+	text-decoration: none;
+	text-align: center;
+	font-size: 18px;
+	color: white;
+}
+#Ingresa:hover{
+	background-color: #CFABFF;
+}
+#txtUsuario{
+	width: 200px;
+	margin: 2px;
+	height: 40px;
+}
+#txtPass{
+	width: 200px;
+	margin: 2px;
+	height: 40px;
+	align-self: center;
+}
+section {
+    display: flex;
+}
+#articulo {
+    flex: 1;
+    text-align: left; 
+    margin-right: 5px;
+}
+#der {
+    width: 60%;
+
+}
+header{
+	font-style: italic;
+	padding: 20px 30px;
+}
+body{
+	padding: 40px;
+}
+nav,
+section,
+footer {
+    width: 80%;
+    text-align: center;
+}
+footer{
+	display: inline-block;
+	color: white;
+	background-color: #6B538C;
+	padding: 15px 30px;
+	margin-top: 100px;
+	font-size: 22px;
+	font-family: arial;
+	font-style: italic;
+}
+#alumno{
+	display: inline-block;
+	color: white;
+	background-color: #12A4FF;
+	padding: 10px 30px;
+	margin-top: 10px;
+	font-size: 20px;
+	font-family: arial;
+	font-style: italic;
+}
