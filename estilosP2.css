@@ -1,0 +1,40 @@
+#contenedor{
+	background-color: #F5F5F1;
+}
+#cont{
+	background-color: #EDEDEB;
+	padding: 25px;
+}
+#t1{
+	font-style: italic;
+	font-family: arial;
+}
+#t2{
+	font-style: italic;
+	font-family: arial;
+	font-size: 25px;
+}
+#arg{
+	font-family: arial;
+	font-size: 15px;
+	font-style: italic;
+}
+#input{
+	padding: 10px;
+	width: 90%;
+}
+#boton{
+	width: 93%;
+	align-content: center;
+	background-color: #565DDE;
+	color: white;
+	height: 60px;
+	margin-color:#565DDE;
+	font-family: arial;
+	font-size: 15px;
+	font-style: italic;
+	cursor: pointer;
+}
+#boton:hover{
+	background-color: #43478F;
+}
