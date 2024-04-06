@@ -1,0 +1,27 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+.texto {
+    padding: 15px 20px;
+    align-self: center;
+    font-size: 24px;
+    font-weight: bold;
+    width: 230px;
+    height: 50px;
+    background-color: #00BCFF;
+    color: #333;
+    text-align: center;
+    line-height: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 30px;
+}
+
+.texto:hover {
+    transform: skew(-20deg); /* Transformación para convertir en romboide */
+    background-color: #A77EE3;
+}
+
+#link:active .texto {
+    background-color: #F60505; /* Nuevo color al hacer clic */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra de la caja */
+}
