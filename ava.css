@@ -1,0 +1,100 @@
+/* Estilos para la barra de navegación */
+.navbar {
+    text-align: center;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.navbar button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#vid1{
+    background-color: red;
+    width: 100px;
+}
+.navbar button:hover {
+    background-color: #777;
+}
+.video iframe {
+    height: 315px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.video iframe:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.video{
+    width: 500px;
+    margin-left:200px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Estilos para las galerías */
+.gallery {
+    display: none;
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #def0ff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+.gallery img:hover{
+    opacity: 0.7;
+}
+.gallery td{
+    padding: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.gallery.active {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.gallery h2 {
+    color: #333;
+}
+
+.gallery .video, .gallery img {
+    margin-bottom: 20px;
+}
+.faq{
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #def0ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+}
+.question{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.answer{
+    margin-bottom: 20px;
+    border-left: 3px solid #007bff;
+    padding-left: 10px;
+}
+.answer p:last-child {
+    margin-bottom: 0;
+}
+#FAQimg{
+    width: 400px;
+    padding-left: 280px;
+}
