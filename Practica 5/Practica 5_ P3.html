@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Práctica 5 - Cuestionario</title>
+    <link rel="stylesheet" href="practica5estilos.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+	<script type="text/javascript" src="jspdf.js"></script>
+	<script type="text/javascript" src="jspdf.plugin.addimage.js"></script>
+	<script type="text/javascript" src="jspdf.plugin.standard_fonts_metrics.js"></script>
+	<script type="text/javascript" src="jspdf.plugin.split_text_to_size.js"></script>
+	<script type="text/javascript" src="jspdf.plugin.from_html.js"></script>	
+</head>
+<script>
+var total;
+function califica()
+    {var total=0;
+    	//Evalua cada pregunta
+    	for (var x=1;x<=4;x++)
+    	{
+        var res=0;
+        var nom="r"+x;
+        var resul=document.getElementsByName(nom);
+        for(var i=0;i<resul.length;i++)
+        {
+            if(resul[i].checked==true)
+                res=parseInt(resul[i].value);
+        }
+        total=total+res;
+        document.getElementById("total").innerHTML="Puntos obtenidos: "+total+" Puntos";
+        }
+        if(total==20)
+        	document.getElementById("comentario").innerHTML="EXCELENTE!!!";
+        else
+        	if(total==15)
+        	document.getElementById("comentario").innerHTML="Regular!!";
+        else
+        	if(total<=15)
+        	document.getElementById("comentario").innerHTML="Estudia un poco más";
+    }
+
+ 
+function generar(){
+
+//Crear un objeto o instancia jsPDF
+var doc = new jsPDF();
+
+//Definir el tamaño de la letra
+doc.setFontSize(40);
+//Color del texto
+doc.setTextColor(9,7,121);
+doc.text(40, 20, "Conocimientos sobre The Weeknd.");
+doc.setTextColor(17, 122, 209); //Color en formato RGB
+doc.setFontSize(30);
+doc.text(50, 35, "Resultados de encuesta."); //Ubicación, Texto
+doc.setTextColor(0,0,0);
+doc.setFontSize(10);
+doc.text(20, 50, "20 puntos. Muy bien. \r Todas tus respuestas son correctas");
+doc.text(20, 70, "15 puntos. Regular. \r Obtuviste 2 preguntas correctas");
+doc.text(20, 90, "0 puntos. \r Todas tus respuestas son incorrectas");
+
+//doc.addImage(imgData, 'JPEG', 10, 40, 180, 180);
+
+var string = doc.output('datauristring');
+
+$('iframe').attr('src', string);
+
+}
+</script>
+
+<body>
+    <div id="contiene">
+	<h1>Responde la encuesta</h1><br/>
+	<h2>The Weeknd Cuestonario, ¿Qué tanto sabes?</h2>
+<div>
+	<form>
+	<ul>
+
+		<li>Pregunta 1. ¿Cuál es el nombre real de The Weeknd?</li>
+		<input type="radio" name="r1" id="r1" value="0"/>Tyler Perry<br/>
+		<input type="radio" name="r1" id="r1" value="0"/>Aubrey Graham<br/>
+		<input type="radio" name="r1" id="r1" value="5"/>Abel Teslaye<br/>
+		<input type="radio" name="r1" id="r1" value="0"/>Michael Jackson<br/>
+		
+		<li>Pregunta 2. ¿Cuál es el álbum debut de The Weeknd lanzado en 2011?</li>
+		<input type="radio" name="r2" id="r2" value="0"/>"Starboy"<br/>
+		<input type="radio" name="r2" id="r2" value="5"/>"Trilogy"<br/>
+		<input type="radio" name="r2" id="r2" value="0"/>"After Hours"<br/>
+		<input type="radio" name="r2" id="r2" value="0"/>"Kiss land"<br/>
+
+		<li>Pregunta 3. ¿Cuál de las siguientes canciones NO es de The Weeknd?</li>
+		<input type="radio" name="r3" id="r3" value="5"/>"Blinding lights"<br/>
+		<input type="radio" name="r3" id="r3" value="0"/>"Can´t feel my face"<br/>
+		<input type="radio" name="r3" id="r3" value="0"/>"Love yourself"<br/>
+		<input type="radio" name="r3" id="r3" value="0"/>"The hills"<br/>
+
+        <li>Pregunta 4. ¿Cuál es el título de la canción de The Weeknd que fue nominada a un premio Óscar?</li>
+		<input type="radio" name="r4" id="r4" value="5"/>"Earned it"<br/>
+		<input type="radio" name="r4" id="r4" value="0"/>"In the night"<br/>
+		<input type="radio" name="r4" id="r4" value="0"/>"Wicked games"<br/>
+		<input type="radio" name="r4" id="r4" value="0"/>"Often"<br/>
+
+		<li>Pregunta 5. ¿En qué año lanzó The Weeknd su álbum "Starboy"?</li>
+		<input type="radio" name="r5" id="r5" value="0"/>2014<br/>
+		<input type="radio" name="r5" id="r5" value="0"/>2015<br/>
+		<input type="radio" name="r5" id="r5" value="0"/>2016<br/>
+		<input type="radio" name="r5" id="r5" value="5"/>2017<br/>
+
+		<li>Pregunta 6. ¿Cuál es el nombre del primer mixtape de The Weeknd lanzado en 2011?</li>
+		<input type="radio" name="r6" id="r6" value="0"/>"Echoes of Silence"<br/>
+		<input type="radio" name="r6" id="r6" value="5"/>"House of balloons"<br/>
+		<input type="radio" name="r6" id="r6" value="0"/>"Thursday"<br/>
+		<input type="radio" name="r6" id="r6" value="0"/>"My Dear Melancholy"<br/>
+
+		<li>Pregunta 7. ¿Qué canción de The Weeknd cuenta con la colaboración de Daft Punk?</li>
+		<input type="radio" name="r7" id="r7" value="0"/>"Starboy"<br/>
+		<input type="radio" name="r7" id="r7" value="5"/>"I feel it coming"<br/>
+		<input type="radio" name="r7" id="r7" value="0"/>"Pray for me"<br/>
+		<input type="radio" name="r7" id="r7" value="0"/>"The hills"<br/>
+
+		<li>Pregunta 8. ¿Cuál de los siguientes álbumes de The Weeknd ganó el premio Grammy al Mejor Álbum Urbano Contemporáneo?</li>
+		<input type="radio" name="r8" id="r8" value="5"/>"Beauty behind the madness"<br/>
+		<input type="radio" name="r8" id="r8" value="0"/>"Starboy"<br/>
+		<input type="radio" name="r8" id="r8" value="0"/>"After hours"<br/>
+		<input type="radio" name="r8" id="r8" value="0"/>"Kisss land"<br/>
+
+		<li>Pregunta 9. ¿Quién fue su pareja alrededor de los años 2015 al 2018?</li>
+		<input type="radio" name="r9" id="r9" value="5"/>Bella Hadid<br/>
+		<input type="radio" name="r9" id="r9" value="0"/>Selena Gomez<br/>
+		<input type="radio" name="r9" id="r9" value="0"/>Kylee Jenner<br/>
+		<input type="radio" name="r9" id="r9" value="0"/>Emma Thompson<br/>
+
+		<li>Pregunta 10. ¿En qué año se lanzó su canción "I was Never There"??</li>
+		<input type="radio" name="r10" id="r10" value="0"/>2015<br/>
+		<input type="radio" name="r10" id="r10" value="5"/>2018<br/>
+		<input type="radio" name="r10" id="r10" value="0"/>2021<br/>
+		<input type="radio" name="r10" id="r10" value="0"/>2016<br/>
+	</ul>
+</form>
+</div>
+<input type="button" id = "boton" value="Calificar" onclick="califica()">
+<p></p>
+<p id="total">   </p>
+<p id="comentario">   </p>
+<input type="button" id = "boton" onclick="generar()" value="Ver resultados"/> <br/>
+<iframe frameborder="0" width="600" height="500"></iframe>
+</div>
+</body>
+</html>
