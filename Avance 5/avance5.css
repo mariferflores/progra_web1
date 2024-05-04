@@ -1,0 +1,73 @@
+h1, h2{
+    background: linear-gradient(to right, #209dfa, #46297d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h1{
+	padding-left: 400px;
+	color: black;
+	font-size: 40px;
+}
+h2{
+	padding-left: 320px;
+	color: black;
+	font-size: 35px;
+}
+body{
+	margin: 0 auto;
+	color: black;
+	width: 60%;
+	align-self: center;
+	background-image: url('img/IAG.jpg');
+	background-size: cover;
+	background-position: center; 
+	background-repeat: no-repeat;  
+}
+ul{
+	padding-left: 60px;
+	padding-top: 40px;
+	background-color: #dae3f5;
+	font-family: arial;
+}
+li{
+	padding-top: 15px;
+	background-color: #b2a9ff;
+	font-size: 18px;
+
+}
+input{
+	background-color: #b2a9ff;
+}
+.my-form {
+  color: red;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+form ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+form li {
+  color: white;
+  margin-bottom: 10px;
+}
+
+form input[type="radio"] {
+  margin-right: 5px;
+}
+
+form input[type="radio"]+label {
+  cursor: pointer;
+}
+
+form input[type="radio"]:checked+label {
+  font-weight: bold;
+}
+#boton{
+	width:200px;
+	height: 50px;
+	font-size: 20px;
+}
