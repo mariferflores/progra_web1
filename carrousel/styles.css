@@ -1,0 +1,45 @@
+/* Estilos para el contenedor principal del carrusel */
+.carousel {
+  position: relative; /* Establece la posición relativa para los elementos secundarios */
+  max-width: 600px; /* Ancho máximo del carrusel */
+  margin: auto; /* Centra el carrusel horizontalmente */
+  overflow: hidden; /* Oculta el contenido que se desborda del contenedor */
+}
+
+/* Estilos para el contenedor de las imágenes del carrusel */
+.carousel-content {
+  display: flex; /* Utiliza un contenedor flexible para las imágenes */
+}
+
+/* Estilos para las imágenes del carrusel */
+.carousel-content img {
+  width: 100%; /* Las imágenes ocupan todo el ancho del contenedor */
+  display: none; /* Oculta las imágenes por defecto */
+}
+
+/* Estilos para las imágenes activas del carrusel */
+.carousel-content img.active {
+  display: block; /* Muestra la imagen activa */
+}
+
+/* Estilos generales para los botones del carrusel */
+button {
+  position: absolute; /* Establece la posición absoluta para los botones */
+  top: 50%; /* Alinea verticalmente los botones al centro */
+  transform: translateY(-50%); /* Ajusta la posición vertical de los botones */
+  background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para los botones */
+  color: white; /* Color del texto de los botones */
+  border: none; /* Elimina los bordes de los botones */
+  padding: 10px; /* Espaciado interno de los botones */
+  cursor: pointer; /* Cambia el cursor al pasar sobre los botones */
+}
+
+/* Estilos específicos para el botón de retroceso */
+#prevBtn {
+  left: 0; /* Posiciona el botón de retroceso a la izquierda */
+}
+
+/* Estilos específicos para el botón de avance */
+#nextBtn {
+  right: 0; /* Posiciona el botón de avance a la derecha */
+}
