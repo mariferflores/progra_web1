@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" type="text/css" href="avance6.css">
+</head>
+<body>
+    <header>
+        <h2>Sea bienvenido a nuestro blog.</h2>
+    </header>
+
+    <div id="titulo">
+        <h1>Blog de IAG</h1>
+    </div>
+
+    <!-- Contenedor de comentarios -->
+    <div id="contenedor-comentarios">
+        <div class="contenedor-azul-oscuro">
+            <div class="contenedor-blanco">
+                <h2>Comentarios</h2>
+                <div id="comentarios">
+                    <!-- Aquí se cargarán los comentarios dinámicamente -->
+                </div>
+            </div>
+            <div class="imagen-hover">
+                <img src="robot.jpg" alt="robotAyuda">
+            </div>
+        </div>
+    </div>
+
+    <!-- Formulario de comentarios -->
+    <div id="contenedor1">
+        <div id="contenedor2">
+            <h2>Deja tu comentario</h2>
+            <form id="formulario-comentario">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br>
+        
+                <label for="comentario">Comentario:</label><br>
+                <textarea id="comentario" name="comentario" rows="4" required></textarea><br>
+        
+                <button type="submit">Enviar Comentario</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Formulario de contacto -->
+    <div id="contenedor3">
+        <div id="contenedor4">
+            <h2>Contacto</h2>
+            <form id="formulario-contacto" method="post" action="avance6.php">
+                <label for="nombre_contacto">Nombre:</label><br>
+                <input type="text" id="nombre_contacto" name="nombre_contacto" required><br>
+        
+                <label for="email_contacto">Correo electrónico:</label><br>
+                <input type="email" id="email_contacto" name="email_contacto" required><br>
+
+                <label for="mensaje_contacto">Mensaje:</label><br>
+                <textarea id="mensaje_contacto" name="mensaje_contacto" rows="4" required></textarea><br>
+        
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="avance6.js"></script>
+</body>
+</html>
+
