@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+#desplegable {
+    position: absolute;
+    display: none;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+h2{
+    padding-top: 10px;
+    padding-left: 15px;
+}
+#desplegable button {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 500px;
+    padding: 5px 10px;
+    color: white;
+    background-color: #555;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#desplegable button:hover {
+    background-color: #777;
+}
+#contenedor1{
+    background-color: #79A1FF;
+}
+#QE{
+    width: 700px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#PQ{
+    width: 600px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 15px;
+
+}
+#imgQE {
+    width: 500px;
+    height: 300px;
+
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.redes-sociales {
+    margin-bottom: 20px;
+}
+
+.redes-sociales h2 {
+    margin-bottom: 10px;
+}
+
+.divider {
+    height: 2px;
+    background-color: #fff;
+    margin: 0 auto 20px auto;
+    width: 50px;
+}
+
+.iconos-redes {
+    display: flex;
+    justify-content: center;
+}
+
+.iconos-redes a {
+    margin: 0 10px;
+}
+
+.iconos-redes img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.iconos-redes img:hover {
+    transform: scale(1.2);
+}
