@@ -1,0 +1,29 @@
+body{
+  font-family: Arial, sans-serif;
+  background-color: #e1eff5;
+  padding: 20px;
+}
+form{
+  margin-bottom: 20px;
+}
+#cadenaInput{
+  width: 300px;
+  padding: 8px;
+  font-size: 16px;
+}
+button{
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #7a36ad;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+button:hover{
+  background-color: #593575;
+}
+p{
+  font-size: 18px;
+  color: #333;
+}
