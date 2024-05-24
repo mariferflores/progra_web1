@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+    background-image: url('img/portada.jpg');
+    background-size: cover; /* Make background cover the whole area */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+/* Header and Menu */
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.menu-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-toggle label {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.menu-toggle input {
+    display: none;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: 60px;
+    left: -100%;
+    width: 200px;
+    background-color: #333;
+    transition: left 0.3s ease;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #555;
+}
+
+.menu-toggle input:checked ~ .menu {
+    left: 0;
+}
+
+/* Title Section */
+#titulo {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    max-width: 90%;
+    text-align: center;
+}
+
+#titulo h1 {
+    font-size: 2rem;
+    margin: 0 0 10px;
+}
+
+#titulo h2, #titulo h3 {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+/* Social Media Section */
+.redes-sociales {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.redes-sociales h2 {
+    margin: 0;
+}
+
+.divider {
+    width: 50px;
+    height: 2px;
+    background-color: #fff;
+    margin: 10px auto;
+}
+
+.iconos-redes {
+    display: flex;
+    justify-content: center;
+}
+
+.iconos-redes a {
+    margin: 0 10px;
+}
+
+.iconos-redes img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.iconos-redes img:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    #titulo {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .menu {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #titulo h1 {
+        font-size: 1.5rem;
+    }
+
+    #titulo h2, #titulo h3 {
+        font-size: 1rem;
+    }
+
+    .menu {
+        width: 100%;
+    }
+}

@@ -1,0 +1,256 @@
+header {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+}
+
+#desplegable {
+    position: absolute;
+    display: none;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+h1{
+    text-decoration: none;
+    color: white;
+    font-family: arial;
+}
+h2{
+    padding-top: 10px;
+    padding-left: 15px;
+    color: black;
+}
+#desplegable button {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 500px;
+    padding: 5px 10px;
+    color: white;
+    background-color: #555;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#desplegable button:hover {
+    background-color: #777;
+}
+
+body {
+    background-image: url(img/fondo3.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat; /* Evita que se repita */
+    background-size: cover; /* Ajusta el tamaño para cubrir todo el body */
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+p{
+    color: white;
+    font-family: arial;
+    font-size: 15px;
+    line-height: 2.0;
+    padding: 20px;
+}
+body ol li a {
+    color: white;
+    font-family: arial;
+    font-size: 15px;
+    line-height: 2.0;
+    padding: 20px;
+}
+body ul li{
+    color: white;
+    font-family: arial;
+    font-size: 15px;
+    line-height: 2.0;
+    padding: 20px;
+}
+h2{
+    color: white;
+    font-size: 30px;
+    font-family: arial;
+    text-align: center;
+}
+.contenedor1,
+.contenedor2,
+.contenedor3,
+.contenedor4 {
+    width: 48%; /* Ajusta el ancho según tus necesidades */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px; /* Espacio entre los contenedores */
+    box-sizing: border-box; /* Para incluir el padding en el ancho total */
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto blanco para mayor contraste */
+}
+
+.contenedor1,
+.contenedor2 {
+    margin-top: 20px; /* Espacio entre los contenedores y el borde superior de .container */
+    padding-top: 20px; /* Padding en la parte superior */
+    padding-bottom: 20px; /* Padding en la parte inferior */
+}
+
+.contenedor3,
+.contenedor4 {
+    padding-top: 20px; /* Padding en la parte superior */
+    padding-bottom: 20px; /* Padding en la parte inferior */
+}
+.map-container {
+    width: 600px; /* Ancho del contenedor del mapa */
+    margin: 20px auto; /* Centrar el contenedor del mapa */
+    display: flex; /* Usa flexbox para centrar la imagen */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.map-container img {
+    width: 700px; /* Ancho del contenedor del mapa */
+    margin: 20px auto; /* Centrar el contenedor del mapa */
+    display: block; /* Asegura que la imagen sea un elemento de bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+footer {
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.redes-sociales {
+    margin-bottom: 20px;
+}
+
+.redes-sociales h2 {
+    margin-bottom: 10px;
+}
+
+.divider {
+    height: 2px;
+    background-color: #fff;
+    margin: 0 auto 20px auto;
+    width: 50px;
+}
+
+.iconos-redes {
+    display: flex;
+    justify-content: center;
+}
+
+.iconos-redes a {
+    margin: 0 10px;
+}
+
+.iconos-redes img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.iconos-redes img:hover {
+    transform: scale(1.2);
+}
+
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+}
+
+.menu-toggle input {
+    display: none;
+}
+
+.menu-toggle label {
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -200px;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    transition: left 0.3s ease;
+    overflow-y: auto;
+}
+
+.menu li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #bbb;
+}
+
+.menu-toggle input:checked ~ .menu {
+    left: 0;
+}
+.redes-sociales {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.redes-sociales h2 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.divider {
+    background-color: #fff;
+    height: 1px;
+    margin-bottom: 10px;
+}
+
+.iconos-redes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconos-redes a {
+    display: inline-block;
+}
+
+.iconos-redes img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}

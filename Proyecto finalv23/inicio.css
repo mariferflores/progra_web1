@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(img/fondo2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+}
+
+.menu-toggle input {
+    display: none;
+}
+
+.menu-toggle label {
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -200px;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    transition: left 0.3s ease;
+    overflow-y: auto;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin-bottom: 20px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #bbb;
+}
+
+.menu-toggle input:checked ~ .menu {
+    left: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.responsive-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+h2 {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+p, ol {
+    color: white;
+    line-height: 1.6;
+    margin: 0 20px;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.redes-sociales {
+    margin-bottom: 20px;
+}
+
+.redes-sociales h2, .redes-sociales h3 {
+    margin: 10px 0;
+}
+
+.divider {
+    height: 2px;
+    background-color: #fff;
+    margin: 0 auto 20px auto;
+    width: 50px;
+}
+
+.iconos-redes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.iconos-redes img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.iconos-redes img:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+    .contenedor {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    p, ol {
+        margin: 0;
+        padding: 0 20px;
+    }
+
+    .contenedor img {
+        flex: 1;
+    }
+
+    .contenedor p {
+        flex: 2;
+    }
+}
+
+@media (min-width: 1024px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    p, ol {
+        font-size: 1.1rem;
+    }
+}

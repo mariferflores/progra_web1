@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería</title>
+    <link rel="stylesheet" type="text/css" href="ava.css">
+</head>
+<body>
+<header>
+    <a href="portada.html" id="portadaLink">
+        <h1>Inteligencia Artificial Generativa</h1>
+    </a>
+    <div class="menu-toggle">
+        <input type="checkbox" id="toggle" />
+        <label for="toggle">&#9776;</label>
+        <ul class="menu">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="avance2.html">Contexto</a></li>
+            <li><a href="nuevo.html">Situación Actual</a></li>
+            <li><a href="avance4.html">Galerías</a></li>
+            <li><a href="Avance 5.html">Encuesta</a></li>
+            <li><a href="avance6.html">Blog</a></li>
+            <div class="redes-sociales">
+                <h2>Redes Sociales</h2>
+                <div class="divider"></div>
+                <div class="iconos-redes">
+                    <a href="https://facebook.com/share/Sq2np4AKzFeqp75a/?mibextid=LQQJ4d" target="_blank"><img src="img/facebookicon.webp" alt="Facebook"></a>
+                    <a href="https://x.com/iagenerativa?s?21" target="_blank"><img src="img/xlogo.webp" alt="Twitter"></a>
+                </div>
+            </div>
+        </ul>
+    </div>
+</header>
+<div class="navbar">
+    <button onclick="mostrarVideos()">Mostrar Videos</button>
+    <button onclick="mostrarFotos()">Mostrar Fotos</button>
+    <button onclick="mostrarFAQ()">Mostrar FAQ</button>
+</div>
+
+<div class="gallery" id="video-gallery">
+    <h2>Galería de Videos</h2>
+    <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/fdx8P3lUvfY?si=NDmCXWQp-rLz7kds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dIwKtOwzyLA?si=uX4Zecs7ltHKlNRZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</div>
+
+<div class="gallery" id="photo-gallery">
+    <h2>Galería de Fotos</h2>
+    <table>
+        <tr>
+            <td><img src="img/ia1.webp" alt="Imagen 1"></td>
+            <td><img src="img/ia2.webp" alt="Imagen 2"></td>
+            <td><img src="img/ia3.webp" alt="Imagen 3"></td>
+        </tr>
+        <tr>
+            <td><img src="img/ia4.webp" alt="Imagen 4"></td>
+            <td><img src="img/ia5.webp" alt="Imagen 5"></td>
+            <td><img src="img/ia6.webp" alt="Imagen 6"></td>
+        </tr>
+        <tr>
+            <td><img src="img/ia7.webp" alt="Imagen 7"></td>
+            <td><img src="img/ia8.webp" alt="Imagen 8"></td>
+            <td><img src="img/ia9.webp" alt="Imagen 9"></td>
+        </tr>
+    </table>
+</div>
+
+<div class="gallery" id="faq">
+    <h2>Preguntas Frecuentes (FAQ)</h2>
+    <div class="question">¿Qué es la inteligencia artificial generativa (IAG)?</div>
+    <div class="answer">
+        <p>La inteligencia artificial generativa es un subcampo de la inteligencia artificial que se centra en la creación de modelos y algoritmos capaces de generar datos nuevos y originales.</p>
+    </div>
+
+    <div class="question">¿Cómo funciona la inteligencia artificial generativa?</div>
+    <div class="answer">
+        <p>Los modelos de inteligencia artificial generativa utilizan técnicas como las redes neuronales generativas (GANs), redes neuronales recurrentes (RNNs) y modelos de lenguaje para aprender patrones en conjuntos de datos y generar nuevos datos que sean similares a los ejemplos de entrenamiento.</p>
+    </div>
+
+    <div class="question">¿Qué aplicaciones tiene la inteligencia artificial generativa?</div>
+    <div class="answer">
+        <p>La inteligencia artificial generativa se utiliza en una variedad de aplicaciones, como la generación de imágenes y videos realistas, la creación de música y arte, la síntesis de voz, la generación de texto y la creación de contenido de entretenimiento.</p>
+    </div>
+
+    <div class="question">¿Cuáles son algunos ejemplos de proyectos de inteligencia artificial generativa?</div>
+    <div class="answer">
+        <p>Algunos ejemplos destacados incluyen la generación de caras humanas realistas con GANs, la creación de música original con redes neuronales recurrentes, la generación de texto coherente con modelos de lenguaje como GPT (Generative Pre-trained Transformer), y la creación de arte visual único con algoritmos generativos.</p>
+    </div>
+    <img src="img/FAQ.webp" alt="FAQ" id="FAQimg">
+</div>
+
+<footer>
+</footer>
+
+<script src="ava.js"></script>
+</body>
+</html>
